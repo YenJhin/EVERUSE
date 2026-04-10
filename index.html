@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EVERUSE | 鞋包洗護・防除霉保養專家</title>
+
+<style>
+:root{
+  --bg:#8b5e3c;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --line:#e5e7eb;
+  --white:#ffffff;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#faf8f5;
+  color:var(--text);
+}
+
+.container{
+  width:90%;
+  max-width:1120px;
+  margin:auto;
+}
+
+/* HEADER（精品版） */
+header{
+  position:sticky;
+  top:0;
+  background:#fff;
+  border-bottom:1px solid var(--line);
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 0;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+/* LOGO 強制顯示 */
+.brand img{
+  height:42px;
+  display:block;
+}
+
+/* 品牌字 */
+.brand-name{
+  font-weight:700;
+  letter-spacing:2px;
+  font-size:14px;
+}
+
+.nav-links{
+  display:flex;
+  gap:18px;
+  color:var(--muted);
+}
+
+/* HERO */
+.hero{
+  background:var(--bg);
+  color:#fff;
+  padding:90px 0 70px;
+}
+
+.hero h1{
+  font-size:clamp(2.4rem,5vw,3.8rem);
+  line-height:1.25;
+  margin:10px 0 22px;
+  letter-spacing:1px;
+}
+
+.hero p{
+  max-width:600px;
+  color:#f3e8dd;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 20px;
+  background:#fff;
+  color:#4b2e1f;
+  border-radius:999px;
+  font-weight:bold;
+}
+
+section{
+  padding:70px 0;
+}
+
+.section-title{
+  text-align:center;
+  font-size:2rem;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.gallery img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:14px;
+}
+
+/* CONTACT */
+.contact-box{
+  text-align:center;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  color:#999;
+}
+
+@media(max-width:900px){
+  .gallery{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container nav">
+    
+    <div class="brand">
+      <!-- 🔥 已鎖定 webp（避免你出錯） -->
+      <img src="./logo.png.webp" alt="EVERUSE Logo">
+      <div class="brand-name">EVERUSE</div>
+    </div>
+
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#cases">Cases</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <h1>鞋包洗護・防除霉保養專家</h1>
+    <p>專業處理鞋類、包款、皮件清潔與防霉保養</p>
+    <a href="#contact" class="btn">立即諮詢</a>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="cases">
+  <div class="container">
+    <h2 class="section-title">作品展示</h2>
+
+    <div class="gallery">
+      <img src="img1.jpg.webp">
+      <img src="img2.jpg.webp">
+      <img src="img3.jpg.webp">
+      <img src="img4.jpg.webp">
+      <img src="img5.jpg.webp">
+      <img src="img6.jpg.webp">
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container contact-box">
+    <h2 class="section-title">聯絡我們</h2>
+    <p>WhatsApp：+886-983-519058</p>
+    <p>Email：ajbizdept@gmail.com</p>
+
+    <a href="https://wa.me/886983519058" class="btn">
+      歡迎與我們聯絡
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2026 EVERUSE
+</footer>
+
+</body>
+</html>
